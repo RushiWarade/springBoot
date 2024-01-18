@@ -9,8 +9,9 @@
 <html>
 <head>
     <title>Home page</title>
+    <%@include file="link.jsp" %>
 </head>
-<body>
-<h1>Hello Rushi</h1>
+<body class="bg-light">
+<%@include file="nav.jsp"%>
 </body>
 </html>

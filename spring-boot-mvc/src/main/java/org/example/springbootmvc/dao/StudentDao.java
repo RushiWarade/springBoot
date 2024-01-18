@@ -1,17 +1,12 @@
 package org.example.springbootmvc.dao;
 
+import org.example.springbootmvc.model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.orm.hibernate5.HibernateTemplate;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class StudentDao {
+public interface StudentDao extends CrudRepository<Student,Integer> {
 
-    @Autowired
-    HibernateTemplate hibernateTemplate ;
-
-
-    public void add(){
-        hibernateTemplate.findByExample(2);
-    }
 }

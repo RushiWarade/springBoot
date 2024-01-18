@@ -14,8 +14,6 @@ public class SpringBootMvcApplication {
         ConfigurableApplicationContext applicationContext = SpringApplication.run(SpringBootMvcApplication.class, args);
 
 
-        HibernateTemplate hibernateTemplate = applicationContext.getBean(HibernateTemplate.class);
-        System.out.println(hibernateTemplate);
     }
 
 }

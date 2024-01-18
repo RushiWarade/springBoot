@@ -9,10 +9,10 @@
 <html>
 <head>
     <title>Signup page</title>
-   <%@include file="link.jsp"%>
+    <%@include file="link.jsp" %>
 </head>
 <body class="bg-light">
-<%@include file="nav.jsp"%>
+<%@include file="nav.jsp" %>
 <div class="conatiner p-3">
     <div class="row">
         <div class="col-md-6 offset-md-3">
@@ -37,7 +37,7 @@
                     <form action="register" method="post">
                         <div class="mb-3">
                             <label for="fname">Enter First Name</label>
-                            <input type="text" id="fname"
+                            <input type="text" id="fname" required
                                    name="fname" class="form-control">
                         </div>
                         <div class="mb-3">
@@ -47,17 +47,19 @@
                         </div>
 
                         <div class="mb-3">
-                            <label for="email">Enter Email</label> <input type="text" name="email" id="email"
+                            <label for="email">Enter Email</label> <input type="text" name="email" id="email" required
                                                                           class="form-control">
                         </div>
                         <div class="mb-3">
                             <label for="mobile">Enter Mobile Number</label> <input type="tel" name="mobile" id="mobile"
+                                                                                   required
                                                                                    class="form-control">
                         </div>
 
 
                         <div class="mb-3">
                             <label for="pass">Enter Password</label> <input type="text" name="password" id="pass"
+                                                                            required
                                                                             class="form-control">
                         </div>
 

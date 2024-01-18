@@ -18,10 +18,13 @@
 
 <div class="container p-5">
     <div class="row">
-        <div class="col-md-8 offset-md-3">
+        <div class="col-md-10 offset-md-1">
             <div class="card shadow">
                 <div class="card-header">
                     <p class="text-center fs-3">Student List</p>
+                   <%-- <div class="text-center">
+                        <a class="" href="batchDelete">delete</a>
+                    </div>--%>
                     <%--                    print message from session     --%>
                     <%
                         String msg = (String) session.getAttribute("msg");
@@ -40,60 +43,60 @@
 
                 </div>
                 <div class="card-body">
-                    <table class="table table-striped">
-                        <thead>
-                        <tr>
-                            <th scope="col">Sr. No</th>
-                            <th scope="col">First Name</th>
-                            <th scope="col">Last Name</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Mobile</th>
-                            <th scope="col">Action</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <%--                        call expense list method and print in table--%>
+
+                    <form action="batchDelete" method="post">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">Select</th>
+                                <th scope="col">Sr.No</th>
+                                <th scope="col">First Name</th>
+                                <th scope="col">Last Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Mobile</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <%
+                                List<Student> studentList = (List<Student>) request.getAttribute("allData");
+                                int srNo = 1;
+                                for (int i = 0; i < studentList.size(); i++) {
+                                    Student student = studentList.get(i);
+                            %>
+
+                            <tr>
+                                <th scope="col"><input type="checkbox" id="select" name="selectedId"
+                                                       value="<%=student.getId()%>"></th>
+                                <th scope="col"><%=srNo%>
+                                </th>
+                                <%srNo++;%>
+                                <td><%=student.getFname()%>
+                                </td>
+                                <td><%=student.getLname()%>
+                                </td>
+                                <td><%=student.getEmail()%>
+                                </td>
+                                <td><%=student.getMobile()%>
+
+                                <td class="d-flex">
+                                    <%--                                edit and delete expense buttons--%>
+
+                                    <a href="edit/<%=student.getId()%>"
+                                       class="btn btn-sm me-1 btn-success">Edit</a>
+                                    <a href="delete/<%=student.getId()%>"
+                                       class="btn btn-sm me-1 btn-danger">Delete</a>
 
 
-                        <%
+                                </td>
+                            </tr>
 
-                            List<Student> studentList = (List<Student>) request.getAttribute("allData");
+                            <%}%>
 
-
-                            int srNo = 1;
-
-                            for (int i = 0; i < studentList.size(); i++) {
-                                Student student = studentList.get(i);
-                        %>
-
-                        <tr>
-                            <th scope="col"><%=srNo%>
-                            </th>
-                            <%srNo++;%>
-                            <td><%=student.getFname()%>
-                            </td>
-                            <td><%=student.getLname()%>
-                            </td>
-                            <td><%=student.getEmail()%>
-                            </td>
-                            <td><%=student.getMobile()%>
-
-                            <td class="d-flex">
-                                <%--                                edit and delete expense buttons--%>
-
-                                <a href="edit/<%=student.getId()%>"
-                                   class="btn btn-sm me-1 btn-success">Edit</a>
-                                <a href="delete/<%=student.getId()%>"
-                                   class="btn btn-sm me-1 btn-danger">Delete</a>
-
-
-                            </td>
-                        </tr>
-
-                        <%}%>
-
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                        <input type="submit" value="Delete selectd data">
+                    </form>
 
 
                 </div>

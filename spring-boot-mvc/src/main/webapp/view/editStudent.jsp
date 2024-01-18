@@ -10,10 +10,7 @@
 <%@include file="nav.jsp" %>
 
 <%
-
-
     Student student = (Student) session.getAttribute("student");
-
 %>
 
 
@@ -28,7 +25,7 @@
                     <form action="edit/<%=student.getId()%>" method="post">
                         <div class="mb-3">
                             <label for="fname">Enter First Name</label>
-                            <input type="text" id="fname" value="<%=student.getFname()%>"
+                            <input type="text" id="fname" value="<%=student.getFname()%>" required
                                    name="fname" class="form-control">
                         </div>
                         <div class="mb-3">
@@ -38,15 +35,20 @@
                         </div>
 
                         <div class="mb-3">
-                            <label for="email">Enter Email</label> <input type="text" name="email" id="email"
+                            <label for="email">Enter Email</label> <input type="text" name="email" id="email" readonly
                                                                           value="<%=student.getEmail()%>"
                                                                           class="form-control">
                         </div>
                         <div class="mb-3">
                             <label for="mobile">Enter Mobile Number</label> <input type="tel" name="mobile" id="mobile"
                                                                                    value="<%=student.getMobile()%>"
+                                                                                   required
                                                                                    class="form-control">
                         </div>
+
+                        <input type="hidden" name="password"
+                               value="<%=student.getPassword()%>"
+                               class="form-control">
 
                         <button class="btn btn-primary col-md-12">Update</button>
 

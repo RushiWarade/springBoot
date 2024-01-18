@@ -22,29 +22,17 @@
                 <div class="card-header text-center">
                     <h3>Login Page</h3>
 
-                    <%
-                        String msg = (String) session.getAttribute("msg");
-
-                        if (msg != null) {
-                    %>
-                    <p style="color: lightsalmon; font-style: italic"><%=msg%>
-                    </p>
-                    <%
-                        }
-                        session.removeAttribute("msg");
-                    %>
-
                 </div>
                 <div class="card-body">
-                    <form action="userlogin" method="post">
+                    <form action="studentLogin" method="post">
 
                         <div class="mb-3">
-                            <label for="email">Enter Email</label> <input type="text" name="email" id="email"
+                            <label for="email">Enter Email</label> <input type="text" name="email" id="email" required
                                                                           class="form-control">
                         </div>
 
                         <div class="mb-3">
-                            <label for="password">Enter Password</label> <input type="text" name="password"
+                            <label for="password">Enter Password</label> <input type="text" name="password" required
                                                                                 id="password"
                                                                                 class="form-control">
                         </div>

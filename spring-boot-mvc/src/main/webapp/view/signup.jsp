@@ -12,35 +12,37 @@
     <%@include file="link.jsp" %>
 </head>
 <body class="bg-light">
-<%@include file="nav.jsp" %>
-<div class="conatiner p-3">
-    <div class="row">
-        <div class="col-md-6 offset-md-3">
-            <div class="card shadow">
-                <div class="card-header text-center">
-                    <h3>Register Page</h3>
 
+<div class="container p-5">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <div class="card shadow">
+                <div class="card-header ">
+                    <%@include file="nav.jsp" %>
+                    <p class="text-center fs-3 font-monospace">Register page</p>
+                    <%--                    print message from session     --%>
                     <%
                         String msg = (String) session.getAttribute("msg");
-
                         if (msg != null) {
                     %>
-                    <p style="color: lightsalmon; font-style: italic"><%=msg%>
-                    </p>
+                    <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
+                        <strong><%=msg%>!</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                aria-label="Close"></button>
+                    </div>
                     <%
                         }
                         session.removeAttribute("msg");
-
                     %>
                 </div>
-                <div class="card-body">
-                    <form action="register" method="post">
-                        <div class="mb-3">
+                <div class="card-body ">
+                    <form action="register" method="post" class="">
+                        <div class="mb-3  ">
                             <label for="fname">Enter First Name</label>
                             <input type="text" id="fname" required
                                    name="fname" class="form-control">
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 ">
                             <labelam for="lname">Enter Last Name</labelam>
                             <input type="text" id="lname"
                                    name="lname" class="form-control">

@@ -12,15 +12,30 @@
     <%@include file="link.jsp" %>
 </head>
 <body class="bg-light">
-<%@include file="nav.jsp" %>
 
 
-<div class="conatiner p-3">
+<div class="container p-5">
     <div class="row">
-        <div class="col-md-4 offset-md-4">
+        <div class="col-md-10 offset-md-1">
             <div class="card shadow">
-                <div class="card-header text-center">
-                    <h3>Login Page</h3>
+                <div class="card-header">
+                    <%@include file="nav.jsp" %>
+
+                    <p class="text-center fs-3 font-monospace">Login Page</p>
+                    <%--                    print message from session     --%>
+                    <%
+                        String msg = (String) session.getAttribute("msg");
+                        if (msg != null) {
+                    %>
+                    <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
+                        <strong><%=msg%>!</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                aria-label="Close"></button>
+                    </div>
+                    <%
+                        }
+                        session.removeAttribute("msg");
+                    %>
 
                 </div>
                 <div class="card-body">

@@ -51,13 +51,13 @@
                     <table class="table table-striped">
                         <thead>
                         <tr>
-                            <th scope="col">Delete</th>
+
                             <th scope="col">Sr.No</th>
                             <th scope="col">First Name</th>
                             <th scope="col">Last Name</th>
                             <th scope="col">Email</th>
                             <th scope="col">Mobile</th>
-                            <th scope="col">Action</th>
+                            <th scope="col">Edit/Delete</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -69,10 +69,6 @@
                         %>
 
                         <tr>
-                            <th scope="col"><input type="checkbox" id="select" name="selectedId"
-                                                   class="custom-checkbox"
-                                                   onchange="updateButtonState()"
-                                                   value="<%=student.getId()%>"></th>
                             <th scope="col"><%=srNo%>
                             </th>
                             <%srNo++;%>
@@ -89,6 +85,10 @@
 
                                 <a href="edit/<%=student.getId()%>"
                                    class="btn btn-sm me-1 btn-success"><i class="bi bi-pencil"></i></a>
+                                <input type="checkbox" id="select" name="selectedId"
+                                       class="custom-checkbox p-2"
+                                       onchange="updateButtonState()"
+                                       value="<%=student.getId()%>">
                             </td>
                         </tr>
 

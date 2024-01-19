@@ -61,7 +61,7 @@ public class MvcController {
         System.out.println(pass);*/
         boolean b = studentService.emailExist(email);
         if (b) {
-            Student student = studentDao.findAllByEmailAndPassword(email, pass);
+            Student student = studentService.findByEmailAndPassword(email, pass);
             if (student != null) {
                 session.setAttribute("msg", "Student Login Successful");
                 return "redirect:/";
@@ -79,12 +79,12 @@ public class MvcController {
     @RequestMapping(value = "/register")
     public String register(@ModelAttribute Student student, HttpSession session) {
         String email = student.getEmail();
-        boolean b = studentDao.existsByEmail(email);
+        boolean b = studentService.emailExist(email);
         if (b) {
             session.setAttribute("msg", email + " Id Already exist try with another email");
             return "redirect:/signup";
         } else {
-            Student save = studentDao.save(student);
+            Student save = studentService.save(student);
             if (save != null) {
                 session.setAttribute("msg", "Register Successfully");
                 return "redirect:/";
@@ -98,7 +98,7 @@ public class MvcController {
     // Get data by id
     @GetMapping("/edit/{id}")
     public String edit(@PathVariable("id") int id, Model model, HttpSession session) {
-        Student student = studentDao.findById(id).get();
+        Student student = studentService.findById(id);
 //        System.out.println(student);
         model.addAttribute("student", student);
         session.setAttribute("student", student);
@@ -108,7 +108,7 @@ public class MvcController {
     //    update data by id
     @PostMapping("/edit/{id}")
     public String update(@PathVariable("id") int id, @ModelAttribute Student updatedStudent, HttpSession session) {
-        Student save = studentDao.save(updatedStudent);
+        Student save = studentService.save(updatedStudent);
 //        System.out.println(save);
         if (save != null) {
             session.setAttribute("msg", "Student Updated Successfully.!!!");
@@ -125,7 +125,7 @@ public class MvcController {
     public String multipleDelete(@RequestParam("selectedId") List<Integer> selectedUserId, HttpSession session) {
 //        selectedUserId.forEach(System.out::println);
         for (Integer id : selectedUserId) {
-            studentDao.deleteById(id);
+            studentService.deleteById(id);
         }
         session.setAttribute("msg", "Selected data has been deleted");
         return "redirect:/";

@@ -21,4 +21,20 @@ public class StudentService {
         return studentDao.existsByEmail(email);
     }
 
+    public Student save(Student student){
+        return studentDao.save(student);
+    }
+
+    public Student findByEmailAndPassword(String email , String pass){
+      return   studentDao.findAllByEmailAndPassword(email, pass);
+    }
+
+    public Student findById(int id){
+        return studentDao.findById(id).get();
+    }
+
+    public void deleteById(int id){
+        studentDao.deleteById(id);
+    }
+
 }

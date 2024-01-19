@@ -53,7 +53,7 @@
                         <button class="btn btn-primary col-md-12">Update</button>
 
                         <div class="text-center mt-2">
-                            Return Back <a href="showData">click here</a>
+                            Return Back <a href="/">click here</a>
                         </div>
 
 

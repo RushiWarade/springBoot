@@ -7,14 +7,10 @@
     <%@include file="link.jsp" %>
 </head>
 <body>
-<%@include file="nav.jsp" %>
-
 <%
-    Student student = (Student) session.getAttribute("student");
+    Student student = (Student) request.getAttribute("student");
 %>
-
-
-<div class="conatiner p-3">
+<div class="container p-3">
     <div class="row">
         <div class="col-md-6 offset-md-3">
             <div class="card shadow">
@@ -22,7 +18,7 @@
                     <h3>Update Student</h3>
                 </div>
                 <div class="card-body">
-                    <form action="edit/<%=student.getId()%>" method="post">
+                    <form action="<%=request.getContextPath()%>/edit/<%=student.getId()%>" method="post">
                         <div class="mb-3">
                             <label for="fname">Enter First Name</label>
                             <input type="text" id="fname" value="<%=student.getFname()%>" required

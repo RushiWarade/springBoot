@@ -15,8 +15,7 @@ import java.util.List;
 @Controller
 
 public class MvcController {
-    @Autowired
-    StudentDao studentDao;
+
 
     @Autowired
     StudentService studentService;
@@ -49,10 +48,10 @@ public class MvcController {
 
     //    for redirect purpose create this url of editStudent it use in get mapping edit url
 //    set the view of edit student
-    @RequestMapping(value = "/editStudent")
-    public String edit() {
-        return "editStudent";
-    }
+//    @RequestMapping(value = "/editStudent")
+//    public String edit() {
+//        return "editStudent";
+//    }
 
     //    Login Student just check email and password is correct if correct redirect showStudent page else get error
     @RequestMapping(value = "/studentLogin")
@@ -101,8 +100,8 @@ public class MvcController {
         Student student = studentService.findById(id);
 //        System.out.println(student);
         model.addAttribute("student", student);
-        session.setAttribute("student", student);
-        return "redirect:/editStudent";
+        model.addAttribute("student", student);
+        return "editStudent";
     }
 
     //    update data by id

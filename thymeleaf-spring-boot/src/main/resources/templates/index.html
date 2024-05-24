@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+<body>
+<h2>fragment header</h2>
+
+<div th:replace="~{header::myHeader}"></div>
+
+<h1>Index page</h1>
+
+<!--message expression-->
+<h2>message expression</h2>
+
+<p th:text="#{my.name}"></p>
+
+<!--unescape text-->
+<p th:utext="#{my.name}"></p>
+
+
+<p th:text="#{my.email}"></p>
+
+<!--get data from controller to view-->
+
+<h2>Geta data from controller</h2>
+<h4>variable expression</h4>
+<p th:text="${today}"></p>
+
+
+<h1>Selection variable expression</h1>
+<!--<p th:text="${student.id}" ></p>
+<p th:text="${student.name}" ></p>
+<p th:text="${student.address}" ></p>-->
+
+<div th:object="${student}">
+    <!--    <p >Id: [[*{id}]] </p>-->
+    <p th:text="*{id}"></p>
+    <p th:text="*{name}"></p>
+    <p th:text="*{address}"></p>
+</div>
+
+
+<h2>Link url expression</h2>
+
+<!--<a th:href="@{'profile'}">profile</a>-->
+
+<!--get dynamic value-->
+<a th:href="@{'profile/'+${student.id}}">profile</a>
+
+
+<h2>link expression</h2>
+<p>link css file</p>
+<!--<link rel="stylesheet"  type="text/css" th:href="@{/css/style.css}">-->
+
+
+<th:block th:if="${student == null}">
+    <h1>student is null</h1>
+</th:block>
+
+
+<div th:if="2>3" >
+    <h4>2 is less than 3 </h4>
+</div>
+<div th:unless="2>3">
+    <h4>2 is greater then 3</h4>
+</div>
+
+
+
+<label for="name">dynamic value</label><input type="text" name="name" id="name" th:attr="value=#{message.name}"><br>
+<label for="male">male</label><input type="radio" name="gender" id="male" th:checked="#{message.gender}==male" >
+<label for="female">female</label><input type="radio" name="gender" id="female" th:checked="#{message.gender}==female">
+
+
+
+<br>
+<input type="submit" th:attr="value=#{message.submit}">
+
+
+<h2>fragment footer</h2>
+<div th:replace="header::footer"></div>
+</body>
+</html>

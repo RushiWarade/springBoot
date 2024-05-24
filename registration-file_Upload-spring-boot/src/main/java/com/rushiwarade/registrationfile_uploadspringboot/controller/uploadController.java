@@ -4,7 +4,6 @@ import com.rushiwarade.registrationfile_uploadspringboot.model.Register;
 import com.rushiwarade.registrationfile_uploadspringboot.service.UploadService;
 import com.rushiwarade.registrationfile_uploadspringboot.utils.FileUtils;
 import jakarta.servlet.http.HttpSession;
-//import org.apache.tomcat.util.http.fileupload.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

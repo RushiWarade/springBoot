@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::data(~{::title},~{::section},~{::'view'})}">
+<head>
+    <meta charset="UTF-8">
+    <title>View Note</title>
+</head>
+<body>
+<section>
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card shadow">
+                    <div class="card-header ">
+
+                        <p class="text-center fs-3 font-monospace">Register page</p>
+
+                        <!-- <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
+                             <strong><%=msg%>!</strong>
+                             <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                     aria-label="Close"></button>
+                         </div>-->
+
+                    </div>
+                    <div class="card-body ">
+                        <form action="register" method="post" class="">
+                            <div class="mb-3  ">
+                                <label for="fname">Enter First Name</label>
+                                <input type="text" id="fname" required
+                                       name="fname" class="form-control">
+                            </div>
+                            <div class="mb-3 ">
+                                <labelam for="lname">Enter Last Name</labelam>
+                                <input type="text" id="lname"
+                                       name="lname" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email">Enter Email</label> <input type="text" name="email" id="email"
+                                                                              required
+                                                                              class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mobile">Enter Mobile Number</label> <input type="tel" name="mobile"
+                                                                                       id="mobile"
+                                                                                       required
+                                                                                       class="form-control">
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label for="pass">Enter Password</label> <input type="text" name="password" id="pass"
+                                                                                required
+                                                                                class="form-control">
+                            </div>
+
+                            <button class="btn btn-primary col-md-12">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div th:replace="~{header::myHeader}"></div>
+<h1>Profile page</h1>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">sr no</th>
+        <th scope="col">Name</th>
+        <th scope="col">Address</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="student:${studentList}" >
+        <th scope="row"  th:classappend="${student.id%2==0}?'bg-success' : 'bg-warning'">[[${student.id}]]</th>
+        <td th:text="${student.name}"></td>
+        <td>[[${student.address}]]</td>
+    </tr>
+
+    </tbody>
+</table>
+
+
+
+<div th:replace="~{header::footer}"></div>
+</body>
+</html>

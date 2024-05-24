@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8f72b1bc-66c8-46cb-b2f8-512ba661a6e5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../E-note/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-note/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-note/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-note/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-note/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-note/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-note/src/main/java/com/rushiwarade/enote/ENoteApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-note/src/main/java/com/rushiwarade/enote/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-note/src/main/java/com/rushiwarade/enote/controller/NoteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-note/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-note/src/main/resources/templates/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-note/src/main/resources/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-note/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-note/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-note/src/main/resources/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-note/src/main/resources/templates/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../E-note/src/test/java/com/rushiwarade/enote/ENoteApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-demo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-demo/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-demo/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-demo/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-demo/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-demo/src/main/java/com/rushiwarade/apidemo/ApiDemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-demo/src/main/java/com/rushiwarade/apidemo/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-demo/src/main/java/com/rushiwarade/apidemo/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-demo/src/main/java/com/rushiwarade/apidemo/dao/ProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-demo/src/main/java/com/rushiwarade/apidemo/model/Products.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-demo/src/main/java/com/rushiwarade/apidemo/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-demo/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api-demo/src/test/java/com/rushiwarade/apidemo/ApiDemoApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../banking-application/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../banking-application/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../banking-application/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../banking-application/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../banking-application/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../banking-application/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../banking-application/src/main/java/com/rushiwarade/bankingapplication/BankingApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../banking-application/src/main/java/com/rushiwarade/bankingapplication/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../banking-application/src/main/java/com/rushiwarade/bankingapplication/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../banking-application/src/main/java/com/rushiwarade/bankingapplication/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../banking-application/src/main/java/com/rushiwarade/bankingapplication/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../banking-application/src/main/java/com/rushiwarade/bankingapplication/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../banking-application/src/main/java/com/rushiwarade/bankingapplication/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../banking-application/src/main/java/com/rushiwarade/bankingapplication/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../banking-application/src/main/java/com/rushiwarade/bankingapplication/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../banking-application/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../banking-application/src/test/java/com/rushiwarade/bankingapplication/BankingApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/src/main/java/com/rushiwarade/enotespringboot/ENoteSpringBootApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/src/main/java/com/rushiwarade/enotespringboot/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/src/main/java/com/rushiwarade/enotespringboot/controller/NoteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/src/test/java/com/rushiwarade/enotespringboot/ENoteSpringBootApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/target/classes/com/rushiwarade/enotespringboot/ENoteSpringBootApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/target/classes/com/rushiwarade/enotespringboot/ServletInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/target/classes/com/rushiwarade/enotespringboot/controller/NoteController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/target/classes/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/target/classes/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/target/classes/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e-note-spring-boot/target/classes/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rushiwarade/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rushiwarade/LinkedListCycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rushiwarade/SwiftLogistics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rushiwarade/array/AscendingOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rushiwarade/array/DescendingOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rushiwarade/array/DuplicateArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rushiwarade/array/ShiftingArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/rushiwarade/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/src/main/java/com/rushiwarade/attedancetrackerspringboot/AttedanceTrackerSpringBootApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/src/main/java/com/rushiwarade/attedancetrackerspringboot/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/src/main/java/com/rushiwarade/attedancetrackerspringboot/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/src/main/java/com/rushiwarade/attedancetrackerspringboot/dao/UploadDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/src/main/java/com/rushiwarade/attedancetrackerspringboot/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/src/main/java/com/rushiwarade/attedancetrackerspringboot/service/UploadService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/src/main/java/com/rushiwarade/attedancetrackerspringboot/utils/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/src/main/resources/static/upload/001b75f2-35e8-41d8-8eaa-3f9ccb22cd5b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/src/main/resources/static/upload/32a33468-5e55-4a3a-9caf-7025ea866c4e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/src/main/resources/static/upload/3c41f068-b83f-49b5-8654-83656135b0a9.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/src/main/resources/static/upload/5ec211fb-d5de-4ef1-ba63-2a4d77678d07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/src/main/resources/static/upload/78d12df2-6657-4571-91aa-236342e9c7ab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/src/main/resources/static/upload/822bc229-b44f-4bc0-8de5-2b558b3fb93d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/src/main/resources/static/upload/a65304ee-e7a1-4c07-bd0f-0820edab5f32.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/src/main/resources/static/upload/bb09e8c6-9571-4399-9fe6-1e1e93fccc47.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/src/main/resources/static/upload/ca1b76bf-2db2-443d-ad44-89f1e150626d.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/src/main/resources/static/upload/d02a4775-891f-495f-8a66-67e56da4bdef.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/src/main/webapp/view/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/src/main/webapp/view/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-boot-file-upload/src/test/java/com/rushiwarade/attedancetrackerspringboot/AttedanceTrackerSpringBootApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleaf-spring-boot/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleaf-spring-boot/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleaf-spring-boot/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleaf-spring-boot/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleaf-spring-boot/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleaf-spring-boot/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleaf-spring-boot/src/main/java/com/rushiwarade/thymeleafspringboot/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleaf-spring-boot/src/main/java/com/rushiwarade/thymeleafspringboot/ThymeleafSpringBootApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleaf-spring-boot/src/main/java/com/rushiwarade/thymeleafspringboot/controller/MvcController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleaf-spring-boot/src/main/java/com/rushiwarade/thymeleafspringboot/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleaf-spring-boot/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleaf-spring-boot/src/main/resources/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleaf-spring-boot/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleaf-spring-boot/src/main/resources/templates/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleaf-spring-boot/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleaf-spring-boot/src/main/resources/templates/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../thymeleaf-spring-boot/src/test/java/com/rushiwarade/thymeleafspringboot/ThymeleafSpringBootApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../registration-file_Upload-spring-boot/src/main/java/com/rushiwarade/registrationfile_uploadspringboot/controller/uploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../registration-file_Upload-spring-boot/src/main/java/com/rushiwarade/registrationfile_uploadspringboot/controller/uploadController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.LinkedListCycle.executor": "Run",
+    "Application.SwiftLogistics.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.LinkedListCycle">
+    <configuration name="LinkedListCycle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rushiwarade.LinkedListCycle" />
+      <module name="practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rushiwarade.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwiftLogistics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rushiwarade.SwiftLogistics" />
+      <module name="practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rushiwarade.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LinkedListCycle" />
+        <item itemvalue="Application.SwiftLogistics" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f72b1bc-66c8-46cb-b2f8-512ba661a6e5" name="Changes" comment="" />
+      <created>1716538317055</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716538317055</updated>
+      <workItem from="1716538318600" duration="516000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
